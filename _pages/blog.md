@@ -2,7 +2,7 @@
 layout: archive
 title: "Posts on Machine Learning, Technology and any other thing I wish to share."
 permalink: /blog/
-author_profile: true
+author-profile: true
 ---
 
 {% include base_path %}
