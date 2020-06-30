@@ -29,7 +29,7 @@ logo                     : /images/khaulat.jpg/
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments: true
+comments: false
   provider               :  # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://khaulat.disqus.com/
