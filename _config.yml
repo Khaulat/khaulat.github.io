@@ -12,6 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
+
 minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
@@ -68,6 +69,8 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+
+
 # Social Sharing
 twitter:
   username               : "khaulat_ayo"
@@ -82,6 +85,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+
 
 # Analytics
 analytics:
