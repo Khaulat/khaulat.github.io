@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+#remote_theme           : "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
@@ -100,28 +100,28 @@ analytics:
 author:
   name             : "Khaulat, Ayomide Abdulhakeem"
   avatar           : "/images/Khaulat.jpg"
-  bio              : "I write codes"
-  location         : "Nigeria"
+  bio              : "I learn teach and understand reasoning and how information is processed to find solution to some of the world problems"
+  location         : 
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:khaulat.ayo@gmail.com"
+      url: "mailto:khaulat.ayo@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://khaulat.github.io"
+      url: "https://khaulat.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/khaulat_ayo"
+      url: "https://twitter.com/khaulat_ayo"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/khaulat.ayomide.94"
+      url: "https://facebook.com/khaulat.ayomide.94"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/khaulat"
+      url: "https://github.com/khaulat"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -129,13 +129,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/khaulat_ayo"
+      url: "https://twitter.com/khaulat_ayo"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/khaulat.ayomide.94"
+      url: "https://facebook.com/khaulat.ayomide.94"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/khaulat"
+      url: "https://github.com/khaulat"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
