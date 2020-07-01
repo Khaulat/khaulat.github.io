@@ -4,7 +4,7 @@ permalink: /contact/
 
 ---
 
-I can be reched on any of these platforms. Wery glad to hear from you!😁
+I can be reached on any of these platforms. Wery glad to hear from you!😁
 
 ### ➡️ [Email](khaulat.ayo@gmail.com)
 
