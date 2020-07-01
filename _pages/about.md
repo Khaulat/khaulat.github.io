@@ -4,7 +4,7 @@ permalink: /about/
 
 ---
 
-### Hi!😃 I'm Khaulat and I contribute to making the world a better place.
+-> ### Hi!😃 I'm Khaulat and I contribute to making the world a better place.
 
 I learn, understand and teach reasoning and how information is processed to find solutions to some of the worlds' problems. 
 
@@ -15,4 +15,4 @@ I also organize/co-organize and speak at many other meetups around tech. Basical
 
 Writing articles and recording videos mostly in form of tutorials or lessons around machine learning or general topics I am interested in, is also one thing I love doing🤩.
 
-I am the best immaginary dancer the world has ever known😅. Hopefully I'll be real some day. Always looking forward to travelling and visiting interesting places across the globe.
+I am the best immaginary dancer the world has ever known😅. Hopefully I'll be real some day. Always looking forward to travelling and visiting interesting places across the globe. <-
