@@ -1,6 +1,6 @@
 ---
 Title: "Convolutional Neural Networks"
-Date: 2020-06-03
+Date: 2020-06-01
 Tags: [machine learning, data science, convolutional neural networks]
 excerpt: "Everything about CNNs"
 ---
