@@ -1,10 +1,10 @@
 ---
-title: "FirstPost"
-date: 2020-06-03
-tags:[machine learning, data science, convolutional neural networks]
+Title: "Convolutional Neural Networks"
+Date: 2020-06-03
+Tags: [machine learning, data science, convolutional neural networks]
 excerpt: "Everything about CNNs"
-
+---
 
 # CNNs
 
-They are neural networks mstly used for images
+They are neural networks mostly used for processing images
