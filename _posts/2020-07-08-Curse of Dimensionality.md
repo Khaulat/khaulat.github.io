@@ -4,10 +4,10 @@ Date: 2020-07-08
 Tags: [machine learning, data science, feature extraction, dimension]
 header:
   image: "/images/dim_reduction.png"
-excerpt: "The Curse of dimensionality in machine learning is a concept used to describe the problems caused by high-dimensional data. What is high-dimensional data, you may ask... Read on! "
+excerpt: "It is a concept used to describe the problems caused by high-dimensional data. What is high-dimensional data, you may ask... Read on! "
 ---
 
-## Curse of Dimensionality
+## What is this **Curse** in machine learning?
 
 When we work with data in any format, there's a tendency for us to overfit or underfit when building a machine learning model. Overfitting is when the model learns too much from the data that it starts memorising it instead of understanding while underfitting is when it learns too little that it doesn't understand enough of the data. In both cases, the model is unable to generalize to other datasets.
 
