@@ -15,6 +15,7 @@ Let us consider a simple and common machine learning dataset, the [*boston housi
 
 ### Dimension = Features = Variables
 
+
 The curse of dimentionality asides overfitting and underfitting is the exponential growth of space with dimensions which is another major cause of decreased accuracy with increased dimensions. As the dimention increases, the space grows exponentially leading to the need for more and more data to fill up the space. Where this data is unavailable, the space becomes sparse making the data from different dimensions far from each other. This brings up another term called *distance metrics*. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_distance.png" alt="">
