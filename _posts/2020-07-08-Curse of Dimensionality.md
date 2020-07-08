@@ -3,7 +3,7 @@ Title: "What is this **Curse** in machine learning?"
 Date: 2020-07-08
 Tags: [machine learning, data science, feature extraction, dimension]
 header:
-  image: "/Downloads/Dim_reduction.png"
+  image: "/images/Dim_reduction.png"
 excerpt: "The Curse of dimensionality in machine learning is a concept used to describe the problems caused by high-dimensional data. What is high-dimensional data, you may ask... Read on! "
 ---
 
@@ -17,7 +17,7 @@ Let us consider a simple and common machine learning dataset, the [*boston housi
 
 The curse of dimentionality asides overfitting and underfitting is the exponential growth of space with dimensions which is another major cause of decreased accuracy with increased dimensions. As the dimention increases, the space grows exponentially leading to the need for more and more data to fill up the space. Where this data is unavailable, the space becomes sparse making the data from different dimensions far from each other. This brings up another term called *distance metrics*. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/Downloads/Rectangle 1.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_distance.png" alt="">
 
 Distance metrics helps algorithms (in this case, machine learning models) recognise the relationship; either similarities or differences between different data points. When these data points are far apart, as shown in the diagram above, it might perform wrongly as two similar data points might be seperated by a large space which makes them to be classified as different. 
 
