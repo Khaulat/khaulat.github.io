@@ -3,7 +3,7 @@ Title: "What is this **Curse** in machine learning?"
 Date: 2020-07-08
 Tags: [machine learning, data science, feature extraction, dimension]
 header:
-  image: "/images/Dim_reduction.png"
+  image: "/images/dim_reduction.png"
 excerpt: "The Curse of dimensionality in machine learning is a concept used to describe the problems caused by high-dimensional data. What is high-dimensional data, you may ask... Read on! "
 ---
 
