@@ -1,6 +1,6 @@
 ---
 Title: "Understanding Deep Q-Learning"
-Date: 2020-07-014
+Date: 2020-07-14
 Tags: [machine learning, data science, q-learning, deep-learning, neural-networks, reinforcement-learning, rl, deep-reinforcement-learning]
 header:
   image: "/images/deep_ql.png"
