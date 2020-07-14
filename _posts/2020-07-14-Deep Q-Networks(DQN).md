@@ -20,7 +20,7 @@ Like any other typical reinforcement learning problem, the 'environment', 'state
 - **Reward** - The price gotten for taking any action; whether right or wrong. The agent gets a **+1** reward for colliding with a yellow banana and a **-1** reward for colliding with a blue banana.
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/rl.png" alt="A visual description of an RL problem">
+<img src="{{ site.url }}{{ site.baseurl }}/images/rl.jpg" alt="A visual description of an RL problem">
 
 
 To train RL agents with the DQN algorithm, we need to define an action-value fuction and try to improve the policy based on this function. This action value function is the estimated reward by the agent for a given state based on an action taken. We update/improve the policy in order to get the best set of actions to be performed by an agent in order to reach its goal.
