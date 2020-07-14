@@ -1,11 +1,11 @@
 ---
 layout: archive
-title: "Posts on Machine Learning, Technology and any other thing I wish to share."
+title: "Articles on Machine Learning, Technology and any other thing I wish to share."
 permalink: /blog/
 author-profile: false
 ---
 
-<h2>Posts</h2>
+
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
