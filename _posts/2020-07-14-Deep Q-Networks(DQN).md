@@ -72,3 +72,4 @@ The DDQN agent was able to solve the environment after 944 episodes with an aver
 - [Human-level control through deep reinforcementlearning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 - [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
 - [Issues in Using Function Approximation for Reinforcement Learning](https://www.ri.cmu.edu/pub_files/pub1/thrun_sebastian_1993_1/thrun_sebastian_1993_1.pdf)
+- [DDQN_unityagents Github](https://github.com/chritoth/ddqn_unityagents/tree/d4ea26dce7462c4795b3af506b08d094ca7f77c2)
