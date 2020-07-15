@@ -86,4 +86,4 @@ The algorithm used has been able to learn well, however, it can still been impro
 - [Issues in Using Function Approximation for Reinforcement Learning](https://www.ri.cmu.edu/pub_files/pub1/thrun_sebastian_1993_1/thrun_sebastian_1993_1.pdf)
 - [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
 - [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
-- [DDQN_unityagents Github](https://github.com/chritoth/ddqn_unityagents/tree/d4ea26dce7462c4795b3af506b08d094ca7f77c2)
+
