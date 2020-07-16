@@ -191,6 +191,6 @@ print MSE
 ```
 
 
-That's it! You can now implement your own different regression models. Check for the full code in this [repository]()
+That's it! You can now implement your own different regression models. Check for the full code in this [repository](https://github.com/Khaulat/Machine-Learning/tree/master/Regression/Prediction)
 
 Don't hesitate to ask any questions you have in the comment section!😁
