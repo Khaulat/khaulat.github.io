@@ -8,8 +8,6 @@ excerpt: "Understanding the different regression models used for prediction"
 ---
 
 
-# What are the different types of Predictive Regression Methods for Analysis?
-
 When working we data, we try to understand the relationship between the various data points. Regression usually does not go unmentioned when deciding how to determine these relationships.
 
 It helps us determine the relationship between the dependent variable(s)[output variable(s)] and independent variable(s)[input variable(s)].
