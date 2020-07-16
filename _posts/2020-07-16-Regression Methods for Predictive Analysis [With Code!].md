@@ -4,7 +4,7 @@ Date: 2020-07-14
 Tags: [machine learning, data science, regression, linear-regression, ridge-regression, lasso-regression, regularization]
 header:
   image: "/images/regression.png"
-excerpt: "Understanding the different Regressions used for prediction"
+excerpt: "Understanding the different regression models used for prediction"
 ---
 
 
