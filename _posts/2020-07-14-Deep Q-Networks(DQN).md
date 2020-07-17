@@ -1,7 +1,7 @@
 ---
 Title: "Understanding Deep Q-Learning"
 Date: 2020-07-14
-Tags: [machine learning, data science, q-learning, deep-learning, neural-networks, reinforcement-learning, rl, deep-reinforcement-learning]
+Tags: [machine learning, data science, q-learning, deep-learning, neural-networks, reinforcement-learning, RL, deep-reinforcement-learning]
 header:
   image: "/images/deep_ql.png"
 excerpt: "Navigation project - An agent trained to navigate and pick objects within a Unity environment"
@@ -9,36 +9,36 @@ excerpt: "Navigation project - An agent trained to navigate and pick objects wit
 
 # Understanding Deep Q-Learning
 
-In this article, I aim at explaining the algorithm behind [this project](https://github.com/Khaulat/Deep_Reinforcement_Learning/tree/master/Navigation_project). As navigation is one very important activity performed by every moving object, the project teaches a reinforcement learning agent to navigate through a field layed with bananas; some yellow and some blue. The goal of the agent is to pick as many yellow bananas as possible while ignoring blue bananas.
+In this article, I aim at explaining the algorithm behind [this project](https://github.com/Khaulat/Deep_Reinforcement_Learning/tree/master/Navigation_project). As navigation is one very important activity performed by every moving object, the project teaches a reinforcement learning agent to navigate through a field with bananas; some yellow and some blue. The goal of the agent is to pick as many yellow bananas as possible while ignoring blue bananas.
 
-Like any other typical reinforcement learning problem, the 'environment', 'state', 'rewards', 'observations' and 'actions' need to be defined. 
+Like any other typical reinforcement learning problem, the 'environment', 'state', 'rewards', 'observations' and 'actions' need to be defined.
 
 - **Environment** - This is the area where the agent navigated through and learns. For this project, a Unity environment is used.
-- **State** - The current status of the agent. The state space for this project has 37 dimensions. The agent could be in any of the states at any time.
-- **Observation** - This is what the agent sees in a environment. Here, the agent observes a local ray-cast perception of nearby objects.
+- **State** - The current status of the agent. The state-space for this project has 37 dimensions. The agent could be in any of the states at any time.
+- **Observation** - This is what the agent sees in an environment. Here, the agent observes a local ray-cast perception of nearby objects.
 - **Action** - Whatever step the agent takes in a given state. For this project, the agent can decide to move forward, backward, turn left or right.
-- **Reward** - The price gotten for taking any action; whether right or wrong. The agent gets a **+1** reward for colliding with a yellow banana and a **-1** reward for colliding with a blue banana.
+- **Reward** - The prize got for taking any action; whether right or wrong. The agent gets a **+1** reward for colliding with a yellow banana and a **-1** reward for colliding with a blue banana.
 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/rl.jpg" alt="A visual description of an RL problem">
 
 
-To train RL agents with the DQN algorithm, we need to define an action-value fuction and try to improve the policy based on this function. This action value function is the estimated reward by the agent for a given state based on an action taken. We update/improve the policy in order to get the best set of actions to be performed by an agent in order to reach its goal.
+To train RL agents with the DQN algorithm, we need to define an action-value function and try to improve the policy based on this function. This action-value function is the estimated reward by the agent for a given state based on an action taken. We update/improve the policy in order to get the best set of actions to be performed by an agent in order to reach its goal.
 
 ## Learning Algorithm
 
-A modified version of Deep Q-Networks was used for learning - Double DQN(DDQN) algorithms. Unlike the DQN algorithm that focus on selecting the actions that maximizes the values, which leads to an estimation that is not robust, DDQN solves this problem of over estimation of action-values. 
+A modified version of Deep Q-Networks was used for learning - Double DQN(DDQN) algorithms. Unlike the DQN algorithm that focuses on selecting the actions that maximize the values, which leads to an estimation that is not robust, DDQN solves this problem of overestimation of action-values.
 It proposes a solution that works well in practice by using different parameters for selecting actions and evaluation.
 
-The task is designed to be episodic - terminates after a given number of episodes. The agent was trained for a maximum of 2000 episodes or until the environment was solved. Each of the episodes made up of 2000 time-steps. It stores its experience from each timestep in a replay buffer. This experience is a combination of the current state and chosen action, as well as the resulting reward and next state of the environment. The agent interacts with the environment according to an e-greedy policy which allows it to select other actions asides those that maximize the action-value. This allows the agent to learn more about the environment by exploring. Parameters used to store and sample from the replay buffer include;
+The task is designed to be episodic - terminates after a given number of episodes. The agent was trained for a maximum of 2000 episodes or until the environment was solved. Each of the episodes made up of 2000 time-steps. It stores its experience from each timestep in a replay buffer. This experience is a combination of the current state and chosen action, as well as the resulting reward and the next state of the environment. The agent interacts with the environment according to an e-greedy policy which allows it to select other actions asides those that maximize the action-value. This allows the agent to learn more about the environment by exploring. Parameters used to store and sample from the replay buffer include;
 
 - **`BUFFER_SIZE`** '10^5' - This is the size of the replay buffer. Specifies how much experiences should be stored.
-- **`BATCH_SIZE`** '32' - The amount of experiences we take from the replay buffer at a time to train the agent.
-- **`UPDATE_EVERY`** '4' - The specifies the amount of timesteps it takes to sample a batch from the replay buffer.
+- **`BATCH_SIZE`** '32' - The number of experiences we take from the replay buffer at a time to train the agent.
+- **`UPDATE_EVERY`** '4' - The specifies the number of timesteps it takes to sample a batch from the replay buffer.
 - **`LR`** '5 . 10^-4'- The speed at which the agent learns from experiences.
 
-As mentioned above, DDQN uses a different Q-Network for selecting actions and a different one for evaluating. Two Q-Networks(Local and Target Networks) with the same achitecture but different weights serve this purpose.
-The local network is trained by minimizing the mean-squared loss function and used the Adam optimizer with a learning rate of **LR**, then the target network is  updated(*soft update*) using the value of **TAU** towards the local network.
+As mentioned above, DDQN uses a different Q-Network for selecting actions and a different one for evaluating. Two Q-Networks(Local and Target Networks) with the same architecture but different weights serve this purpose.
+The local network is trained by minimizing the mean-squared loss function and used the Adam optimizer with a learning rate of **LR**, then the target network is updated(*soft update*) using the value of **TAU** towards the local network.
 
 
 ## Methods
@@ -53,7 +53,7 @@ After tuning, the hyperparameters that prove to fit the model well are;
 | BUFFER_SIZE | 10^5 |
 | BATCH_SIZE  | 32 |
 | UPDATE_EVERY | 4 |
-| GAMMA | 0.95 | 
+| GAMMA | 0.95 |
 | LR | 5 . 10^-4 |
 | TAU | 5 . 10^-2|
 | start_epsilon | 1.0 |
@@ -72,11 +72,11 @@ The DDQN agent was able to solve the environment after 944 episodes with an aver
 
 ## Future Improvements
 
-The algorithm used has been able to learn well, however, it can still been improved;
+The algorithm used has been able to learn well, however, it can still be improved;
 
 - **Prioritized Experience Replay**: Instead of selecting experiences at random to learn from the replay buffer, we can prioritize the experiences we select based on those that move us closer to the rewards.
 
-- **Rainbow**: This algorithm combines all the improvements over the original DQN paper. Using this algorithm for the model would definately result in a better result.
+- **Rainbow**: This algorithm combines all the improvements over the original DQN paper. Using this algorithm for the model would definitely result in a better result.
 
 
 ## References
@@ -86,4 +86,3 @@ The algorithm used has been able to learn well, however, it can still been impro
 - [Issues in Using Function Approximation for Reinforcement Learning](https://www.ri.cmu.edu/pub_files/pub1/thrun_sebastian_1993_1/thrun_sebastian_1993_1.pdf)
 - [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
 - [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
-
