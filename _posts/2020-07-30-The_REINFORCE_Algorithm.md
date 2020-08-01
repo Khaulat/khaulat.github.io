@@ -1,6 +1,6 @@
 ---
 Title: "REINFORCE"
-Date: 2020-07-30
+Date: 2020-08-01
 Tags: [machine learning, reinforcement learning, deep learning]
 header:
   image: "/images/reinforce.png"
