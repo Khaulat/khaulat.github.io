@@ -1,13 +1,11 @@
 
 ---
-
 Title: "The REINFORCE Algorithm"
 Date: 2020-08-01
 Tags: [machine learning, data science, deep-learning, neural-networks, reinforcement-learning, RL, deep-reinforcement-learning]
 header:
   image: "/images/reinforce.png"
 excerpt: "My implementation of the "REINFORCE" reinforcement learning algorithm"
-
 ---
 
 # Understanding REINFORCE
@@ -28,6 +26,7 @@ As mentioned above, the agent uses gradient ascent to optimize the weights in ot
 - The estimated gradient is then used to update the weights of the policy.
 
 The agent was trained for a maximum of 1000 episodes.
+
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/reinforce_alg.png" alt="The REINFORCE Algorithm">
 
