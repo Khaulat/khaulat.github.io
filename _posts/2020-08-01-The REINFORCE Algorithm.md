@@ -5,6 +5,7 @@ Tags: [machine learning, data science, deep-learning, neural-networks, reinforce
 header:
   image: "/images/reinforce.png"
 excerpt: "My implementation of the "REINFORCE" reinforcement learning algorithm"
+
 ---
 
 # Understanding REINFORCE
