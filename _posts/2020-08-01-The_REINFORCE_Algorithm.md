@@ -1,6 +1,7 @@
 
 ---
 Title: "The REINFORCE Algorithm"
+
 Date: 2020-08-01
 Tags: [machine learning, data science, deep-learning, neural-networks, reinforcement-learning, RL, deep-reinforcement-learning]
 header:
