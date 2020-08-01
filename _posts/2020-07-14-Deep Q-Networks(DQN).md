@@ -30,14 +30,16 @@ To train RL agents with the DQN algorithm, we need to define an action-value fun
 A modified version of Deep Q-Networks was used for learning - Double DQN(DDQN) algorithms. Unlike the DQN algorithm that focuses on selecting the actions that maximize the values, which leads to an estimation that is not robust, DDQN solves this problem of overestimation of action-values.
 It proposes a solution that works well in practice by using different parameters for selecting actions and evaluation.
 
-The task is designed to be episodic - terminates after a given number of episodes. The agent was trained for a maximum of 2000 episodes or until the environment was solved. Each of the episodes made up of 2000 time-steps. It stores its experience from each timestep in a replay buffer. This experience is a combination of the current state and chosen action, as well as the resulting reward and the next state of the environment. The agent interacts with the environment according to an e-greedy policy which allows it to select other actions asides those that maximize the action-value. This allows the agent to learn more about the environment by exploring. Parameters used to store and sample from the replay buffer include;
+The task is designed to be episodic - terminates after a given number of episodes. The agent was trained for a maximum of 2000 episodes or until the environment was solved. Each of the episodes made up of 2000 time-steps. It stores its experience from each timestep in a replay buffer. This experience is a combination of the current state and chosen action, as well as the resulting reward and the next state of the environment. The agent interacts with the environment according to an e-greedy policy which allows it to select other actions asides those that maximize the action-value. This allows the agent to learn more about the environment by exploring. 
+
+Parameters used to store and sample from the replay buffer include;
 
 - **`BUFFER_SIZE`** '10^5' - This is the size of the replay buffer. Specifies how much experiences should be stored.
 - **`BATCH_SIZE`** '32' - The number of experiences we take from the replay buffer at a time to train the agent.
 - **`UPDATE_EVERY`** '4' - The specifies the number of timesteps it takes to sample a batch from the replay buffer.
 - **`LR`** '5 . 10^-4'- The speed at which the agent learns from experiences.
 
-As mentioned above, DDQN uses a different Q-Network for selecting actions and a different one for evaluating. Two Q-Networks(Local and Target Networks) with the same architecture but different weights serve this purpose.
+As mentioned above, DDQN uses a different Network for selecting actions and a different one for evaluating. Two Q-Networks(Local and Target Networks) with the same architecture but different weights serve this purpose.
 The local network is trained by minimizing the mean-squared loss function and used the Adam optimizer with a learning rate of **LR**, then the target network is updated(*soft update*) using the value of **TAU** towards the local network.
 
 
@@ -76,12 +78,12 @@ The algorithm used has been able to learn well, however, it can still be improve
 
 - **Prioritized Experience Replay**: Instead of selecting experiences at random to learn from the replay buffer, we can prioritize the experiences we select based on those that move us closer to the rewards.
 
-- **Rainbow**: This algorithm combines all the improvements over the original DQN paper. Using this algorithm for the model would definitely result in a better result.
+- **Rainbow**: This algorithm combines all the corrections made to the original DQN paper. Using this algorithm for the model would definitely result in a better result.
 
 
 ## References
 
-- [Human-level control through deep reinforcementlearning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+- [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 - [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
 - [Issues in Using Function Approximation for Reinforcement Learning](https://www.ri.cmu.edu/pub_files/pub1/thrun_sebastian_1993_1/thrun_sebastian_1993_1.pdf)
 - [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
