@@ -1,4 +1,3 @@
-
 ---
 Title: "The REINFORCE Algorithm"
 Date: 2020-08-01
