@@ -8,6 +8,7 @@ excerpt: "My implementation of the "REINFORCE" reinforcement learning algorithm"
 
 ---
 
+
 # Understanding REINFORCE
 
 An agent was trained in the OpenAI gym's pong environment to move left or right and hit a ball. This algorithm is a simple implementation of a policy-based method for training agents in reinforcement learning. Policy-based methods try to find the policy used for choosing actions by the agent directly instead of first evaluating for an intermediate step -> value-functions as done in [Deep Q-Networks](https://khaulat.github.io/Deep-Q-Networks(DQN)/).
