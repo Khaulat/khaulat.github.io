@@ -7,7 +7,7 @@ header:
 excerpt: "My implementation of the Proximal Policy Optimization Algorithm"
 ---
 
-# Understanding Proximal Policy Optimization
+## Understanding Proximal Policy Optimization
 
 This algorithm is a direct improvement over the REINFORCE algorithm. The problems faced by REINFORCE as stated in this [article](https://khaulat.github.io/Reinforce-Algorithm/) include;
 
