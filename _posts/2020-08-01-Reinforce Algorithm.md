@@ -10,7 +10,7 @@ excerpt: "My implementation of the Proximal Policy Optimization Algorithm"
 # Understanding the REINFORCE Algorithm
 
 
-An agent was trained in the OpenAI gym's pong environment to move left or right and hit a ball. This algorithm is a simple implementation of a policy-based method for training agents in reinforcement learning. Policy-based methods try to find the policy used for choosing actions by the agent directly instead of first evaluating for an intermediate step -> value-functions as done in [Deep Q-Networks](https://khaulat.github.io/Deep-Q-Networks(DQN)/).
+An agent was trained in the OpenAI gym's pong environment to move left or right and hit a ball. This algorithm used is a simple implementation of a policy-based method for training agents in reinforcement learning. Policy-based methods try to find the policy used for choosing actions by the agent directly instead of first evaluating for an intermediate step -> value-functions as done in [Deep Q-Networks](https://khaulat.github.io/Deep-Q-Networks(DQN)/).
 
 The REINFORCE algorithm uses a function approximator(neural network) to predict a policy given the state. To get the optimal policy, the agent's **goal** is to estimate for the best weights used at each neuron with hill-climbing - also known as **gradient ascent** that would maximize the expected return.
 
@@ -19,7 +19,7 @@ It works with the aim of making all actions that lead to the agent winning more 
 
 ## Learning Algorithm
 
-As mentioned above, the agent uses gradient ascent to optimize the weights in other to get the best policy. In this case, the agent steps in the direction of the gradient instead of the opposite as in gradient descent. To get the estimate of the gradient and update the policy, the REINFORCE algorithm typically follows these 3 steps;
+As mentioned above, the agent uses gradient ascent to optimize the weights in order to get the best policy. In this case, the agent steps in the direction of the gradient instead of the opposite as in gradient descent. To get the estimate of the gradient and update the policy, the REINFORCE algorithm typically follows these 3 steps;
 
 - Uses the initial policy to collect sample trajectories.
 - Sample trajectories are then used to estimate the gradient.
@@ -30,7 +30,7 @@ The agent was trained for a maximum of 1000 episodes.
 
 ## Methods
 
-The model was trained with 2 convolutional layers and 2 fully connected layers with a RELU activation function. Two layers were stacked in order to get a better prediction. A sigmoid function was then used in the final layer to predict the probability of selecting an action - in this case, left.
+The model was trained with 2 convolutional layers and 2 fully connected layers with a RELU activation function. Two input images were stacked in order to get a better prediction. A sigmoid function was then used in the final layer to predict the probability of selecting an action - in this case, left. 
 The **`Control.ipynb`** contains the code for training and evaluation, **`model.py`** contains the Q-Network architecture while **`ddpg_agent`** contains the reinforcement learning algorithm.
 
 
@@ -47,7 +47,7 @@ Even though this algorithm performed quite well, it still suffers from some obvi
 - The gradient estimate is very noisy. There is the possibility of collecting trajectories that may not be representative of the policy.
 - There is no clear credit assignment. The fact that an action leads to a win doesn't mean it is the best action and the fact that it leads to a loss doesn't mean it is a bad action. The dependence of the credit on the final actions is not clear.
 
-Fortunately, there are solutions to these problems! One method that directly solves for the problems mentioned above is the **Proximal Policy Optimization method**. Read more about it [here]().
+Fortunately, there are solutions to these problems! One method that directly solves for the problems mentioned above is the **Proximal Policy Optimization method**. Read more about it [here](https://khaulat.github.io/Proximal-Policy-Optimization/).
 
 The **Actor-Critic method** is also another great improvement over the REINFORCE algorithm. This method combines both policy-based and value-based methods - solves the bias problem in value-based methods and the variance problem in policy-based methods.
 
