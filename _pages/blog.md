@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Articles on Machine Learning, Technology and any other thing I wish to share."
+title: "Articles on technical topics - mostly AI related."
 permalink: /blog/
 author-profile: false
 ---

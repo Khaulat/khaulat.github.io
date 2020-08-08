@@ -2,11 +2,9 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Blog"
+  - title: "Tech Blog"
     url: /blog/
   - title: "Courses"
     url: /courses/
-  - title: "Portfolio"
-    url: /portfolio/
   - title: "Contact"
     url: /contact/
