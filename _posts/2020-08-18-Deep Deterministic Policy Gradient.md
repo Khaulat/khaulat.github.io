@@ -7,7 +7,7 @@ header:
 excerpt: "Continous Control project - An agent trained to continuously control a moving object and not losing contact"
 ---
 
-# Understanding Deep Deterministic Policy Gradients
+## Understanding Deep Deterministic Policy Gradients
 
 This is another type of deep reinforcement learning algorithm which combines both policy-based methods and value-based methods. It belongs to the actor-critic family of RL models. I use this algorithm in this project to train an agent in the form of a double-jointed arm to control a ball continuously. This action is important, especially in robotics.
 
