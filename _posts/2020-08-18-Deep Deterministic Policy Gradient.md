@@ -21,7 +21,7 @@ Like any other typical reinforcement learning problem, the 'environment', 'state
 
 The training was done in parallel in order to maximize learning and make it faster. For this, 20 copies of the same agents learnt how to control the ball.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/reacher.gif" alt="The agent in it's environment">
+![The agent in it's environment](https://github.com/Khaulat/khaulat.github.io/blob/master/images/reacher.gif)
 
 
 ## Learning Algorithm
