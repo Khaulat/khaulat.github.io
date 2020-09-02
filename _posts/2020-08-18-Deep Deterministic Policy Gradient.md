@@ -4,7 +4,7 @@ Date: 2020-08-24
 Tags: [machine learning, data science, ddpg, deep-learning, neural-networks, reinforcement-learning, RL, deep-reinforcement-learning]
 header:
   image: "/images/ddpg.png"
-excerpt: "Continous Control project - An agent trained to continuously control a moving object and not losing contact"
+excerpt: "Continuous Control project - An agent trained to continuously control a moving object and not losing contact"
 ---
 
 ## Understanding Deep Deterministic Policy Gradients
