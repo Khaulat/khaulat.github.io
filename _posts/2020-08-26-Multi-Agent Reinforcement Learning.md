@@ -4,7 +4,7 @@ Date: 2020-08-26
 Tags: [machine learning, data science, multi-agent, deep-learning, neural-networks, reinforcement-learning, RL, deep-reinforcement-learning]
 header:
   image: "/images/marl.png"
-excerpt: "Continuous Control project - An agent trained to continuously control a moving object and not losing contact"
+excerpt: "Two reinforcement learning agents are trained to play Tennis"
 ---
 
 ## Understanding Multi-Agent Reinforcement Learning
