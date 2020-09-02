@@ -36,6 +36,8 @@ I was able to get a better prediction by making these improvements;
 
 The **`Play_Tennis.ipynb`** contains the code for training and evaluation, **`model.py`** contains the Q-Network architecture while **`maddpg_agent.py`** contains the reinforcement learning algorithm. All contained in [this repository](https://github.com/Khaulat/Deep_Reinforcement_Learning/tree/master/Cooperation%20and%20Competition).
 
+All code can be found in this [repository](https://github.com/Khaulat/Deep_Reinforcement_Learning/tree/master/Cooperation%20and%20Competition).
+
 After tuning, the hyperparameters that prove to fit the model well are;
 
 | Hyperparameter | Value |
