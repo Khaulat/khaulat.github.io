@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : #"en-US"
-title                    : "DIVERSE"
+title                    : "Khaulat .A. Abdulakeem"
 title_separator          : "-"
 subtitle                 : #Everything I wish to share
 name                     : "Khaulat, Ayomide Abdulhakeem"
@@ -73,7 +73,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "khaulat_ayo"
+  username               : "diversekhaulat"
 facebook:
   username               :
   app_id                 :
@@ -112,16 +112,16 @@ author:
       url: "https://khaulat.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/khaulat_ayo"
+      url: "https://twitter.com/diversekhaulat"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/khaulat.ayomide.94"
+      url: "https://facebook.com/diversekhaulat"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/khaulat"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/diversekhaulat"
 
 # Site Footer
 footer:
@@ -129,10 +129,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/khaulat_ayo"
+      url: "https://twitter.com/diversekhaulat"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/khaulat.ayomide.94"
+      url: "https://facebook.com/diversekhaulat"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/khaulat"
@@ -144,7 +144,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: https://instagram.com/
+      url: https://instagram.com/diversekhaulat
 
 
 # Reading Files
